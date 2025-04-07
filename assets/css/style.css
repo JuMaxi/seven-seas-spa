@@ -1,0 +1,13 @@
+#navbar a {
+    color:#3B2F2F;
+}
+
+#navbar .nav-link.active {
+    font-weight: bold;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
