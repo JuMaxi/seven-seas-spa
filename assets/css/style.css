@@ -53,6 +53,10 @@ h2{
     color: #3B2F2F;
 }
 
+.custom-btn {
+    color:white;
+}
+
 /* Style the services section */
 #services img {
     height: 200px; 
