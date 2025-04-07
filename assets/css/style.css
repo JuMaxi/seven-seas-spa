@@ -1,3 +1,4 @@
+/* Style the navbar */
 #navbar a {
     color:#3B2F2F;
 }
@@ -6,8 +7,86 @@
     font-weight: bold;
 }
 
+ /* Make the navbar sticky */
+ .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 #logo {
     width: 30px;
     height: 30px;
-    margin: 5px;
+    margin-right: 7px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFEBD4;
+    padding: 8rem 0;
+}
+
+/* Adding padding to the body to create space between the footer and the main content, since the footer is using the fixed-bottom class
+    overlapping the content above */
+body {
+    padding-bottom: 60px; /* Adjust this value to match the height of your footer */
+}
+
+/* 
+This CSS rule adds padding to the left and right of the body and main elements. 
+This ensures that the content is not right up against the viewport on small screens.
+*/
+main {
+    margin: 2rem 0;
+}
+
+/* Style the heading */
+h1,
+h2{
+    font-family: 'Handlee', cursive;
+}
+
+.btn {
+    color: #3B2F2F;
+}
+
+/* Style the services section */
+#services img {
+    height: 200px; 
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Adds shadow to the right and bottom */
+    transition: transform 0.2s ease-in-out; /* Optional: Adds a smooth hover effect */
+}
+
+/* Testimonial style */
+#testimonials img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+}
+
+#testimonialCarousel {
+    overflow-x: hidden; /* Prevents horizontal scrolling during transitions */
+}
+/* Style the footer section */
+footer {
+    color: #ffebd4;
+    background-color: #6f4e37;
+    height: 60px; /* Set a fixed height for the footer */
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffebd4;
 }

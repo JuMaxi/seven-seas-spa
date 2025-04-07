@@ -6,14 +6,15 @@
     <title>Seven Seas Spa</title>
     <!-- Boostrap library -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/AIIAB_4_2_1_1.png" alt="Logo" id="logo">Seven Seas Spa</a>
+                <img src="assets/images/logo.png" alt="Logo" id="logo">Seven Seas Spa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +27,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -35,7 +36,174 @@
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid hero-section text-center">
+        <h1 class="display-4">Welcome to Seven Seas Spa</h1>
+        <p class="lead">We are dedicated to improving your overall wellbeing.</p>
+        <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+
+    <!-- Our Services Section -->
+    <main>
+        <!-- Our Services Section -->
+        <section id="services" class="container my-5">
+            <h2 class="display-5">Our Services</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Card 1: Yoga Classes -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/images/yoga.png" class="card-img-top" alt="A woman in a yoga class">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga Classes</h5>
+                            <p class="card-text">Achieve balance, flexibility, and peace with expert-led yoga sessions for all.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Nutritional Advice -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/images/nutritional.png" class="card-img-top" alt="Healthy food on a table">
+                        <div class="card-body">
+                            <h5 class="card-title">Nutritional Advice</h5>
+                            <p class="card-text">Personalized nutritional guidance to improve health, energy, and overall well-being effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Mental Health Support -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/images/mental-healthy.png" class="card-img-top" alt="Healthy elderly lady">
+                        <div class="card-body">
+                            <h5 class="card-title">Mental Health Support</h5>
+                            <p class="card-text">Compassionate support to nurture emotional resilience, mindfulness, and mental well-being daily.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4: Wellness Program -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/images/group-people.png" class="card-img-top" alt="Health and happy group of people">
+                        <div class="card-body">
+                            <h5 class="card-title">Wellness Program</h5>
+                            <p class="card-text">Comprehensive programs designed to enhance physical, mental, and emotional health holistically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Tips Section -->
+        <section id="wellness-tips" class="container my-5">
+            <h2 class="display-5 mb-4">Wellness Tips</h2>
+            <p>
+                Discover simple yet effective ways to improve your physical and mental well-being.
+            </p>
+            <ul>
+                <li><strong>Stay Hydrated:</strong> Drink at least 8 glasses of water daily.</li>
+                <li><strong>Exercise Regularly:</strong> Engage in physical activity for at least 30 minutes a day.</li>
+                <li><strong>Eat Balanced Meals:</strong> Include fruits, vegetables, and proteins in your diet.</li>
+                <li><strong>Practice Mindfulness:</strong> Spend time meditating or practicing deep breathing exercises.</li>
+                <li><strong>Get Enough Sleep:</strong> Aim for 7-8 hours of quality sleep every night.</li>
+            </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="container my-5">
+            <h2 class="display-5 mb-4">Testimonials</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner"></div>
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <img src="assets/images/testimonial1.png" alt="A beautiful woman in her cozy home" class="rounded-circle mb-3">
+                                <p class="card-text">"The spa helped me relax and improve my overall mental and physical health."</p>
+                                <p>- Sarah Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <img src="assets/images/testimonial2.png" alt="A successfull businessman drinking a coffee" class="rounded-circle mb-3">
+                                <p class="card-text">"I feel rejuvenated and energized after every visit to Seven Seas Spa."</p>
+                                <p>- Michael Brown</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <img src="assets/images/testimonial3.png" alt="A successfull businesswoman in her workplace" class="rounded-circle mb-3">
+                                <p class="card-text">"The services are exceptional, and the staff is incredibly professional and caring."</p>
+                                <p>- Emily Davis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="py-3 fixed-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Column -->
+            <div class="text-left">
+                &copy; 2022 Seven Seas Spa
+            </div>
+            <!-- Right Column -->
+            <div class="text-right">
+                <a href="https://www.facebook.com/?locale=en_GB" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/?lang=en" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank" rel="noopener noreferrer" aria-label="Visit our Linkedin page">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6ec5d9a39e.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navbarCollapse = document.getElementById('navbarNav');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992) { // Adjust breakpoint as needed
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                            toggle: true
+                        });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
