@@ -1,3 +1,25 @@
+/* Style the heading */
+h1,
+h2,
+h3 {
+    font-family: 'Handlee', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Adjust this value to match the height of your footer */
+}
+
+/* 
+This CSS rule adds padding to the left and right of the body and main elements. 
+This ensures that the content is not right up against the viewport on small screens.
+*/
+main {
+    margin: 2rem 0;
+}
+
 /* Style the navbar */
 #navbar a {
     color:#3B2F2F;
@@ -8,7 +30,7 @@
 }
 
  /* Make the navbar sticky */
- .navbar {
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,27 +51,6 @@
     padding: 8rem 0;
 }
 
-/* Adding padding to the body to create space between the footer and the main content, since the footer is using the fixed-bottom class
-    overlapping the content above */
-body {
-    padding-bottom: 60px; /* Adjust this value to match the height of your footer */
-}
-
-/* 
-This CSS rule adds padding to the left and right of the body and main elements. 
-This ensures that the content is not right up against the viewport on small screens.
-*/
-main {
-    margin: 2rem 0;
-}
-
-/* Style the heading */
-h1,
-h2,
-h3 {
-    font-family: 'Handlee', cursive;
-}
-
 .btn {
     color: #3B2F2F;
 }
@@ -59,21 +60,14 @@ h3 {
 }
 
 /* Style the services section */
-#services img {
+.card-img-top{
     height: 200px; 
     object-fit: cover;
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+.services {
+    object-position: top;
 }
-
-.card {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Adds shadow to the right and bottom */
-    transition: transform 0.2s ease-in-out; /* Optional: Adds a smooth hover effect */
-}
-
 /* Testimonial style */
 #testimonials img {
     width: 100px; 
